@@ -1,0 +1,17 @@
+version: '3.1'
+services:
+  spring-rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq_in_hello_world_project
+    ports:
+      - '5672:5672'
+      - '15672:15672'
+#      environment:
+#        - RABBITMQ_DEFAULT_USER=user
+#        - RABBITMQ_DEFAULT_PASS=1233
+
+
+
+
+#  docker-compose -f docker-compose.yml up -d
+
